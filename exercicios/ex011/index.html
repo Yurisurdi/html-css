@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminui o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+   <!-- <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/cheo.mp3" controls autoplay></audio>
+     MP3 WAV OGG são formatos aceitos -->
+
+     <audio preload="metadata" controls loop>
+        <source src="midia/costagold.mp3" type="audio/mpeg">
+        <source src="midia/chaos.ogg" type="audio/ogg">
+        <source src="midia/cheo.wav" type="audio/wav">
+     </audio> <!-- usando os 3 tipos de arquivo midia, wav é o mais pesado e nao recomendavel -->
+</body>
+</html>

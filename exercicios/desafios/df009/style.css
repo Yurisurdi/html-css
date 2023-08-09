@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(24, 23, 23);
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+
+}
+div{
+    text-align: center;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
